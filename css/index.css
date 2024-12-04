@@ -1,0 +1,25 @@
+.carousel-item img {
+    width: auto; /* Deja que la imagen mantenga sus proporciones sin estirarse */
+    height: auto;
+    max-width: 100%; /* No superes el ancho máximo del contenedor */
+    object-fit: cover; /* Ajusta la imagen para que se recorte en lugar de estirarse */
+}
+
+.card-group {
+    padding-top: 20px; /* Espacio dentro del div */
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item img {
+        height: 700px;
+    }
+}

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap practica</title>
+    <!-- boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+
+<body>
+    <!-- boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <!-- navbar: barra navegacion superior -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Valorant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="qa.html">QA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- acordion: barras animadas de acordeon -->
+    <div class="accordion" id="accordionExample">
+        <!-- 1er acordeon -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    ¿Cómo puedo mejorar en valorant?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Forma resumida de mejorar.</strong> La mejor forma de mejorar es viendo a otros jugar e
+                    intentando replicar
+                    sus movimientos. Aunque no es una forma apta para todo tipo de jugador, si estas empezando a
+                    jugar, es mejor <code>ver y replicar</code>.
+                </div>
+            </div>
+        </div>
+
+        <!-- 2do acordeon -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Qué agente debo usar?
+                </button>
+            </h2>
+
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Depende mucho de tu movement.</strong> Es importante destacar que no hay un agente superior
+                    al resto en todas las situaciones.
+                    Depende mucho de tu movilidad y tus pensamientos dentro del juego, intenta jugar todos los roles y
+                    conocer tu forma de jugar.
+                    Si eres un jugador agresivo, seria bueno jugar con duelista o incluso iniciador. Si eres un jugador
+                    defensivo, centinela o controlador.
+                </div>
+            </div>
+        </div>
+
+        <!-- 3er acordeon -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Qué tantos lineups son recomendable aprender en un mapa?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Conoce el agente.</strong> No hay una respuesta correcta, es mejor conocer el agente y
+                    conocer que tan lejos
+                    puede tirar la habilidad. Cuando juegues mucho con un agente, conoceras las limitaciones que tiene
+                    el lanzar
+                    cierta habilidad, por lo que, aunque saber algunos line ups es importante, cuando conozcas el
+                    agente, podras crear
+                    tus propios line ups sin haberlos practicado
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alerts: Alerta de pagina (explica proposito de pagina) -->
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">¡Importante!</h4>
+        <p>Pagina con unico proposito de entretener y practicar la programacion, no tomar todo en serio ya que esta
+            desactualizado.
+            Si buscas informacion mas actual favor de revisar la seccion de <code>contacto</code>.</p>
+    </div>
+
+    <!-- Card: Seccion de contacto -->
+    <div class="row">
+        <div class="col-sm-3 container text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Discord</h5>
+                    <p class="card-text">Redireccion al grupo privado de discord.</p>
+                    <a href="https://discord.gg/9TPemkjEJD" target="_blank" class="btn btn-primary">Redireccionar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 container text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Github</h5>
+                    <p class="card-text">Redireccion a mi pagina personal de Github.</p>
+                    <a href="https://github.com/Juano-C" target="_blank" class="btn btn-primary">Redireccionar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 container text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Paypal</h5>
+                    <p class="card-text">Redireccion a mi paypal por si quieres donar.</p>
+                    <a href="https://www.paypal.me/juanchauvet" target="_blank"
+                        class="btn btn-primary">Redireccionar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer: mensaje y copyright -->
+    <section id="footer">
+        <div class="container">
+            <p>&copy; Juano-C GitHub 2024</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

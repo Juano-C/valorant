@@ -1,0 +1,9 @@
+.dropdown {
+    padding-left: 20px;
+}
+
+/* Ocultamos las secciones por defecto */
+.section {
+    display: none;
+    padding-left: 40px;
+}
